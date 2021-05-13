@@ -32,7 +32,7 @@ const newOperation =   async(req, res) => {
       WHERE name = '${tipo}'`;
         let Tipo = await sequelize.query(queryTipo, {type:sequelize.QueryTypes.SELECT})
 
-        //console.log(Tipo);
+      
 
       sequelize.query(queryUser, {
         replacements: [
